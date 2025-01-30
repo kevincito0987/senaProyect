@@ -7,6 +7,7 @@ from excercises.excercise6 import excercise6
 from excercises.excercise7 import excercise7
 from excercises.excercise8 import excercise8
 from excercises.excercise9 import excercise9
+from excercises.excercise10 import excercise10
 
 while True:
     try:
@@ -28,8 +29,7 @@ while True:
                 """
         )
         opc = int(input())
-        if opc == 0:
-                break 
+
         try:
             while True:
                 match opc:
@@ -78,6 +78,13 @@ while True:
                         continuar = input("¿Desea continuar? (s/n): ")
                         if continuar.lower() != 's':
                             break
+                    case 10:
+                        excercise10()
+                        continuar = input("¿Desea continuar? (s/n): ")
+                        if continuar.lower() != 's':
+                            break
+                    case 0 : break
+                    case _ : print("Opción no válida")
         except ValueError:
             print("Ingresa un numero porfa.")
     except ValueError:
