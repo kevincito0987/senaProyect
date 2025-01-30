@@ -6,6 +6,7 @@ from excercises.excercise5 import excercise5
 from excercises.excercise6 import excercise6
 from excercises.excercise7 import excercise7
 from excercises.excercise8 import excercise8
+from excercises.excercise9 import excercise9
 
 while True:
     try:
@@ -69,6 +70,11 @@ while True:
                             break
                     case 8:
                         excercise8()
+                        continuar = input("¿Desea continuar? (s/n): ")
+                        if continuar.lower() != 's':
+                            break
+                    case 9:
+                        excercise9()
                         continuar = input("¿Desea continuar? (s/n): ")
                         if continuar.lower() != 's':
                             break
