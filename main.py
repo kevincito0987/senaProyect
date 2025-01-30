@@ -1,6 +1,7 @@
 from excercises.exercise1 import exercise1
 from excercises.excercise2 import excercise2
 from excercises.excercise3 import excercise3
+from excercises.excercise4 import excercise4
 
 while True:
     try:
@@ -42,6 +43,11 @@ while True:
                         continuar = input("¿Desea continuar? (s/n): ")
                         if continuar.lower() != 's':
                             break 
+                    case 4:
+                        excercise4()
+                        continuar = input("¿Desea continuar? (s/n): ")
+                        if continuar.lower() != 's':
+                            break
         except ValueError:
             print("Ingresa un numero porfa.")
     except ValueError:
