@@ -1,4 +1,6 @@
 from excercises.exercise1 import exercise1
+from excercises.excercise2 import excercise2
+from excercises.excercise3 import excercise3
 
 while True:
     try:
@@ -27,7 +29,17 @@ while True:
                 match opc:
                     case 1:
                         exercise1()
-                        continuar = input("¿Desea calcular el tiempo para otro corredor? (s/n): ")
+                        continuar = input("¿Desea continuar? (s/n): ")
+                        if continuar.lower() != 's':
+                            break 
+                    case 2:
+                        excercise2()
+                        continuar = input("¿Desea continuar? (s/n): ")
+                        if continuar.lower() != 's':
+                            break 
+                    case 3:
+                        excercise3()
+                        continuar = input("¿Desea continuar? (s/n): ")
                         if continuar.lower() != 's':
                             break 
         except ValueError:
